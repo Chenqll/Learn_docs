@@ -40,3 +40,17 @@ https://zhuanlan.zhihu.com/p/27544821
 - `html_theme = 'sphinx_rtd_theme'`
   
 **docreset/__init__.py 里删除的东西的含义FLAG_BUILD 与配置.readthedocs.yaml或者将api.cn加入oneflow主仓库有什么关系**
+- 因为要把中文文档加入到oneflow主仓库之中。
+
+## 出问题有可能是oneflow仓库没有更新
+- 到这里https://docs.oneflow.org/master/index.html下载安装最新的oneflow：
+- python3 -m pip install -f https://staging.oneflow.info/branch/master/cu112 --pre oneflow
+- 出现没有CUDA的问题 也有可能是安装了oneflow的cpu版本
+  
+## 如果修改了docreset的init文件
+- pip uninstall docreset
+- python setup.py install 重新安装
+  
+## doc里的代码test过不了可能是给出的输出和源输出不一致，此时
+- ipython 进入python环境
+- 把 docstring里的打码复制进去，看看是哪里报错
