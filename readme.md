@@ -1,6 +1,0 @@
-- diary_learn_quick_note 是以天为单位记录每天学习内容 并关联到其他文件笔记中
-- CPP_learn_base 是指从头base开始学习的笔记，应该包含第一课，第二课这样的目录
-- CPP_learn_quick 是指在任务或者工作中学到的某一点的知识，应该包含以知识大类的目录
-- Transformers_learn_base
-    - BERT_learn_base
-        - GLUE text_classification
